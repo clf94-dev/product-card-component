@@ -1,0 +1,141 @@
+.body {
+    margin: 0;
+}
+.container {
+    display: flex;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    padding: 300px;
+}
+
+.cardContainer{
+    display: flex;
+    max-width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+.imgCol {
+    display: flex;
+
+}
+img {
+    width: 87%;
+    border-radius: 10px 0 0 10px;
+}
+.textCol {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding: 30px 30px 30px 0px;
+
+}
+
+.preTitle{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif ;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+
+}
+.title {
+    font-weight: 700;
+    font-family: 'Fraunces', serif ;
+    margin: 0;
+}
+
+.description {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif ;
+}
+.pricesRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+.currentPrice {
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    margin: 10px 20px 10px 0;
+    font-family: 'Fraunces', serif;
+}
+.previousPrice {
+    text-decoration:line-through ;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+}
+
+.addBtn{
+    height: 50px;
+    background-color: hsl(158, 36%, 37%) ;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border:none;
+    border-radius: 10px;
+    font-family: 'Monserrat', sans-serif ;
+    text-align: center;
+    margin-top: 20px;
+}
+.cartImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  (max-width: 375px) {
+    .container {
+        padding: 30px;
+    }
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-height: 250px;
+    }
+    .textCol {
+        width: auto;
+        padding: 25px;
+    }
+    .preTitle{ 
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+    .title {
+        margin: 0;
+    }
+    .description{ 
+        margin-top: 15px;
+    }
+    .btnContainer {
+        width: auto;
+    }
+    .currentPrice { 
+        margin: 0 15px 0 0;
+    }
+    .previousPrice {
+        font-size: 13px;
+    }
+    .addBtn {
+        margin-top: 15px;
+    }
+}
