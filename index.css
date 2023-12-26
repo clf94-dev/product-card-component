@@ -85,7 +85,27 @@ img {
     text-align: center;
     margin-top: 20px;
 }
-.cartImg {
+.addBtn:hover {
+    cursor: pointer;
+    border: 1px solid hsl(158, 36%, 37%);
+    color:  hsl(158, 36%, 37%) !important;
+    background-color: white;
+}
+.cartImg{
+    display: none;
+}
+.cartImg.active {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.cartImgHover{
+    display: none;
+}
+.cartImgHover.active {
+    display: block ;
     width: 20px;
     height: 20px;
     margin-right: 12px;
