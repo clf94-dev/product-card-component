@@ -5,7 +5,7 @@
     display: flex;
     background-color: hsl(30, 38%, 92%);
     justify-content: center;
-    padding: 300px;
+    padding: 25%;
 }
 
 .cardContainer{
@@ -96,8 +96,13 @@ img {
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 960px){
+    .container{
+        padding: 15%;
+    }
+}
 
-@media  (max-width: 375px) {
+@media  (max-width: 765px) {
     .container {
         padding: 30px;
     }
@@ -110,7 +115,7 @@ img {
         width: 100%;
         height: auto;
         object-fit: cover;
-        max-height: 250px;
+        max-height: 350px;
     }
     .textCol {
         width: auto;
@@ -137,5 +142,14 @@ img {
     }
     .addBtn {
         margin-top: 15px;
+    }
+}
+@media (max-width: 375px) {
+    img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-height: 250px;
     }
 }
