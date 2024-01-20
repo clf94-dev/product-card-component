@@ -116,13 +116,13 @@ img {
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 960px){
+@media ( 765px > width > 960px){
     .container{
         padding: 15%;
     }
 }
 
-@media  (max-width: 765px) {
+@media  ( 375px > width > 766px) {
     .container {
         padding: 30px;
     }
@@ -164,7 +164,7 @@ img {
         margin-top: 15px;
     }
 }
-@media (max-width: 375px) {
+@media (width < 376px) {
     img {
         border-radius: 10px 10px 0 0;
         width: 100%;
